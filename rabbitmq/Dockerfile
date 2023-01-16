@@ -1,5 +1,6 @@
 FROM rabbitmq:management-alpine
-ADD rabbitmq.config /etc/rabbitmq/
-ADD definitions.json /etc/rabbitmq/
-RUN chown rabbitmq:rabbitmq /etc/rabbitmq/rabbitmq.config /etc/rabbitmq/definitions.json
+ADD etc/rabbitmq.config /etc/rabbitmq/
+ADD etc/definitions.json /etc/rabbitmq/
+ADD etc/enabled_plugins /etc/rabbitmq/
+RUN chown rabbitmq:rabbitmq /etc/rabbitmq/rabbitmq.config /etc/rabbitmq/definitions.json /etc/rabbitmq/enabled_plugins
 #CMD ["rabbitmq-server"]

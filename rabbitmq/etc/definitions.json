@@ -1,0 +1,54 @@
+{
+    "rabbit_version": "3.9",
+    "users": [
+     {
+      "name": "doseok",
+      "password_hash": "6eX/xCCeiVFSLgAJuoqwSp7o9VWe1VBfW52oxD7rZKyGmw6K",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+     },
+     {
+      "name": "cpas",
+      "password_hash": "6eX/xCCeiVFSLgAJuoqwSp7o9VWe1VBfW52oxD7rZKyGmw6K",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": ""
+     },
+     {
+      "name": "admin",
+      "password_hash": "6eX/xCCeiVFSLgAJuoqwSp7o9VWe1VBfW52oxD7rZKyGmw6K",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+     }
+    ],
+    "vhosts": [
+     {
+      "name": "\/"
+     },
+     {
+        "name": "\/dev"
+     } 
+    ],
+    "permissions": [,    
+     {
+      "user": "admin",
+      "vhost": "\/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+     },
+     {
+        "user": "doseok",
+        "vhost": "\/",
+        "configure": ".*",
+        "write": ".*",
+        "read": ".*"
+     }
+  
+    ],
+    "parameters": [],
+    "policies": [],
+    "queues": [],
+    "exchanges": [],
+    "bindings": []
+   }
+   
